@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
+    "pillow>=11.3.0",
     "robyn>=0.71.3",
 ]
 
