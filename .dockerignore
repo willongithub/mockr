@@ -1,0 +1,47 @@
+# Exclude the project virtual environment from image builds
+.venv
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Development and environment files
+.git
+.github
+.gitignore
+.env
+.env.*
+.mypy_cache/
+.pytest_cache/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Documentation
+docs/
+*.md
+
+# Local development configuration
+docker-compose*.yml
+Makefile

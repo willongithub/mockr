@@ -55,6 +55,8 @@ uv pip install mockr
 
 ## Running the Server
 
+### Local Installation
+
 ```sh
 # Automatic optimization (recommended)
 uv run mockr --fast
@@ -78,6 +80,23 @@ uv run mockr --processes 4 --workers 2
 # Each process uses ~50-100MB base memory
 # Monitor with: ps aux | grep python
 ```
+
+### Running with Docker
+
+You can also run Mockr in a Docker container:
+
+```sh
+# Build the Docker image
+docker build -t mockr .
+
+# Run the container
+docker run -p 8848:8848 mockr
+
+# Run with custom options
+docker run -p 8848:8848 mockr python /app/src/mockr/app.py --processes 4 --workers 2
+```
+
+The container exposes port 8848 and includes a health check that verifies the service is running properly.
 
 ## Example Requests
 
