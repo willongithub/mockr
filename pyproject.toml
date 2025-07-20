@@ -1,0 +1,19 @@
+[project]
+name = "mockr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Liam", email = "liam@a1502" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "robyn>=0.71.3",
+]
+
+[project.scripts]
+mockr = "mockr:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
